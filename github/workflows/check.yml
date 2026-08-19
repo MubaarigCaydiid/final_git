@@ -23,6 +23,6 @@ jobs:
 
       - name: Congratulations Team Git and GitHub
         run: |
-          echo "🎉 Congratulations Team Git and GitHub!"
-          echo "👏 Excellent work! Your Git and GitHub workflow is working successfully."
-          echo "✅ Project checks passed successfully."
+          echo "Congratulations Team Git and GitHub!"
+          echo "Excellent work! Your Git and GitHub workflow is working successfully."
+          echo "Project checks passed successfully."
