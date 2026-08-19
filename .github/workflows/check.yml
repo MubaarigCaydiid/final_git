@@ -1,0 +1,13 @@
+name: Congratulations
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  congratulations:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Congratulations Team Git and GitHub
+        run: echo "🎉 Congratulations Team Git and GitHub!"
