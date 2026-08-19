@@ -1,0 +1,28 @@
+name: Git and GitHub Congratulations
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  congratulations:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check project files
+        run: |
+          test -f index.html
+          test -f style.css
+          test -f script.js
+          test -f README.md
+          test -f .gitignore
+          echo "All required project files are present!"
+
+      - name: Congratulations Team Git and GitHub
+        run: |
+          echo "🎉 Congratulations Team Git and GitHub!"
+          echo "👏 Excellent work! Your Git and GitHub workflow is working successfully."
+          echo "✅ Project checks passed successfully."
